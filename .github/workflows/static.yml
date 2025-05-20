@@ -45,7 +45,7 @@ jobs:
       - name: Build project
         run: |
           cd project
-          npm run build -- --base=/repo/
+          npm run build -- --base=/test/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
