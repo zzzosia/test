@@ -37,14 +37,6 @@ document.querySelector('#app').innerHTML = `
       data utworzenia:
       <input type="date" name="created_at" placeholder="data utworzenia" />
     </label>
-    <label>
-      tagi (np. web, js):
-      <input type="text" name="tags" placeholder="tagi oddzielone przecinkiem" />
-    </label>
-    <label>
-      <input type="checkbox" name="is_published" />
-      opublikowany
-    </label>
     <button type="submit" class="submit-button">dodaj artykuł</button>
   </form>
 `;
