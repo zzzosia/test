@@ -16,7 +16,7 @@ body {
 #app {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #F7B7A3;
+  background-color: #f5e4df;
   border-radius: 12px;
   padding: 30px 40px;
   box-shadow: 0 8px 20px rgba(11, 60, 73, 0.2);
@@ -81,7 +81,7 @@ select:focus {
 }
 
 #articles-list li {
-  background-color: #4FD1C5;
+  background-color: #c3d6d4;
   border-radius: 10px;
   padding: 18px 22px;
   margin-bottom: 18px;
@@ -91,7 +91,7 @@ select:focus {
 }
 
 #articles-list li:hover {
-  background-color: #3AAFA9;
+  background-color: #a8bab9;
 }
 
 #articles-list h2 {
