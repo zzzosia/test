@@ -3,3 +3,21 @@
 @theme {
     --color-primary: #FF0000;
 }
+
+body {
+    font-family: Arial;
+    max-width: 600px;
+    margin: auto;
+    padding: 2em;
+  }
+  input, textarea, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  article {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
