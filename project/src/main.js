@@ -44,26 +44,7 @@ document.querySelector('#app').innerHTML = `
 const API_URL = 'https://eohovqvrwlupfctqzhdk.supabase.co/rest/v1/article';
 const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvaG92cXZyd2x1cGZjdHF6aGRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc2NzUxMjcsImV4cCI6MjA2MzI1MTEyN30.lvHieYaC0EiorhK-HWaD57AZq_cg7Ui7pKQ1yvuvxQI';
 
-const fetchArticles = async () => {
-  const order = sortSelect?.value || 'created_at.desc';
-
-  try {
-    const response = await fetch(`${API_URL}?order=${order}`, {
-      headers: {
-        apiKey: API_KEY,
-        'Content-Type': 'application/json',
-      },
-    });
-
-    const data = await response.json();
-    showArticles(data);
-  } catch (error) {
-    console.error('Fetch error:', error);
-  }
-};
-
 const sortSelect = document.getElementById('sort-select');
-sortSelect.addEventListener('change', fetchArticles);
 
 const fetchArticles = async () => {
   const order = sortSelect?.value || 'created_at.desc';
@@ -82,6 +63,8 @@ const fetchArticles = async () => {
     console.error('Fetch error:', error);
   }
 };
+
+sortSelect.addEventListener('change', fetchArticles);
 
 const showArticles = (articles) => {
   const list = document.getElementById('articles-list');
@@ -139,4 +122,5 @@ form.addEventListener('submit', async (e) => {
   }
 });
 
+// Pobierz artykuły przy starcie
 fetchArticles();
