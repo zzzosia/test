@@ -2,7 +2,7 @@ import './style.css';
 import { format } from 'date-fns';
 
 document.querySelector('#app').innerHTML = `
-  <h1>co piszczy w trawie?</h1>
+  <h1>zosia mrożek</h1>
 
   <div id="sort-field">
     <label for="sort-select" class="select-header">sortuj według:</label>
